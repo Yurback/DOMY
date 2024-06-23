@@ -1,0 +1,231 @@
+// МИКСИН ЗАМЕНЫ URL иконок для хоста - заменить ссылку перед вставкой на хост
+@mixin url($url){
+
+   $url: '../images/icon/'+$url;
+//    $url: '/do-my/views/images/icon/'+$url;
+   background: url($url) center center / cover no-repeat;   
+}
+
+@mixin urlcont($url){
+       $url: '../images/icon/'+$url;
+    //    $url: '/do-my/views/images/icon/'+$url;
+       background: url($url) center center / contain no-repeat;   
+    }
+
+
+//    Картинки хэдера и футера
+.icon-menu {
+    @include urlcont('logo.svg');
+    transition: 0.01s;
+}
+
+.icon-menu:hover {
+    @include url('aim.svg');
+    transition: 0.01s;
+}
+
+
+
+// картирнки стартовой страницы
+
+
+.house {
+    @include url('house.svg');         
+}
+
+// ЭТО НАЩ БОТ ЛИСЕНОК СПИТ
+
+.fox-sleep {
+    background: url('../images/icon/fox_sleep.svg') center/70% no-repeat;
+}
+
+.fox-wakeUp {
+    background: url('../images/icon/fox_wakeUp.svg') center/100% no-repeat; 
+}
+
+.fox-wakeUp2 {
+    background: url('../images/icon/fox_wakeUp2.svg') center/100% no-repeat; 
+}
+
+.fox-sniff {
+    background: url('../images/icon/fox_sniff.svg') center/70% no-repeat; 
+}
+
+.fox-speak {
+    background: url('../images/icon/fox_speak.svg') center/60% no-repeat;
+}
+
+.fox-speak2 {
+    background: url('../images/icon/fox_speak2.svg') center/60% no-repeat;
+}
+
+.fox-speak3 {
+    background: url('../images/icon/fox_speak3.svg') center/60% no-repeat;
+}
+
+@keyframes fox_sleep {
+    0% {opacity: 1;
+
+    }
+    50% {opacity: 0;;
+    }
+    
+    100% {opacity: 1;
+    }
+}
+
+
+.fox-sleep::after, .fox-sniff::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 17px;
+    top: 0px;
+    left: 5px;
+    @include urlcont('fox_ring_sleep.svg');
+    animation: fox_sleep 10s infinite;
+}
+
+
+
+.fox-wakeUP1 {
+    @include url('fox_wakeUp1.svg');
+    position: relative
+}
+
+
+// картинки страницы опроса
+
+// .title-gift-pic30 {
+//     @include urlcont('title30.png');
+//     width: 250px;
+//     height: 180px;
+// }
+
+// .title-gift-pic60 {
+//     @include urlcont('title60.png');
+//     width: 250px;
+//     height: 180px;
+// }
+
+.land {
+
+    background: url('../images/icon/background_start_desktop.svg') center -213px /cover no-repeat; 
+}
+
+.land-patner-pic {
+    @include urlcont('logo_pigeons.svg');
+}
+
+.board-right-hint {
+    @include urlcont('hint.svg');
+}
+
+.result-tru-question {
+    @include urlcont('true_question.svg');
+}
+
+.result-form-question2 {
+    @include urlcont('form_thanks.svg');
+}
+
+.result-form-question1 {
+    @include urlcont('form_thanks1.svg');
+}
+
+.result-form-question3 {
+    @include urlcont('form_thanks3.svg');
+}
+
+.result-false-question {
+    @include urlcont('false_question.svg');
+}
+
+.result-loss-level {
+    @include urlcont('loss_level.svg');
+}
+
+.result-pass-level1 {
+    @include urlcont('pass_level_1.svg');
+}
+
+.result-pass-level2 {
+    @include urlcont('pass_level_2.svg');
+}
+
+.result-pass-level3 {
+    @include urlcont('pass_level_3.svg');
+}
+
+.result-victory {
+    @include urlcont('victory.svg');
+}
+
+.present {
+    @include urlcont('present.svg');
+}
+
+.present:hover {
+    @include urlcont('present_red.svg');
+}
+
+.gift-block-present {
+    background-color: blue;
+    @include urlcont('present.svg');
+    width: 70px;
+    height: 70px;
+}
+
+.gift-block-present:hover {
+    background-color: blue;
+    @include urlcont('present_red.svg');
+}
+
+
+// КАРТИНКИ СТРАНИЦЫ ПРОЕКТА
+
+.column2-image1 {
+    @include url('keyhole.svg');
+}
+
+@keyframes aim {
+    0% {opacity: 0;
+
+    }
+    
+    100% {opacity: 1;
+    }
+}
+
+.column2-image1-aim {
+    @include url('aim.svg');
+    animation: aim 5s 1;
+}
+
+
+
+//картинки страницы thankks
+
+.thanks-image {
+    display: flex;
+    margin-top: 20px;
+    margin: 10px;
+    height: 200px;
+    @include urlcont('thanks.svg');
+}
+
+.thanks-image-problem {
+    display: flex;
+    margin-top: 20px;
+    margin: 10px;
+    height: 200px;
+    @include urlcont('elephant.png');
+}
+
+@media (max-width: 570px) {
+    .land {
+        background: url('../images/icon/background_start_mob.svg') center center / cover  no-repeat; 
+    }
+}
+
+

@@ -1,0 +1,211 @@
+.icon-menu {
+  background: url("../images/icon/logo.svg") center center/contain no-repeat;
+  -webkit-transition: 0.01s;
+  transition: 0.01s;
+}
+
+.icon-menu:hover {
+  background: url("../images/icon/aim.svg") center center/cover no-repeat;
+  -webkit-transition: 0.01s;
+  transition: 0.01s;
+}
+
+.house {
+  background: url("../images/icon/house.svg") center center/cover no-repeat;
+}
+
+.fox-sleep {
+  background: url("../images/icon/fox_sleep.svg") center/70% no-repeat;
+}
+
+.fox-wakeUp {
+  background: url("../images/icon/fox_wakeUp.svg") center/100% no-repeat;
+}
+
+.fox-wakeUp2 {
+  background: url("../images/icon/fox_wakeUp2.svg") center/100% no-repeat;
+}
+
+.fox-sniff {
+  background: url("../images/icon/fox_sniff.svg") center/70% no-repeat;
+}
+
+.fox-speak {
+  background: url("../images/icon/fox_speak.svg") center/60% no-repeat;
+}
+
+.fox-speak2 {
+  background: url("../images/icon/fox_speak2.svg") center/60% no-repeat;
+}
+
+.fox-speak3 {
+  background: url("../images/icon/fox_speak3.svg") center/60% no-repeat;
+}
+
+@-webkit-keyframes fox_sleep {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fox_sleep {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fox-sleep::after, .fox-sniff::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 17px;
+  top: 0px;
+  left: 5px;
+  background: url("../images/icon/fox_ring_sleep.svg") center center/contain no-repeat;
+  -webkit-animation: fox_sleep 10s infinite;
+          animation: fox_sleep 10s infinite;
+}
+
+.fox-wakeUP1 {
+  background: url("../images/icon/fox_wakeUp1.svg") center center/cover no-repeat;
+  position: relative;
+}
+
+.land {
+  background: url("../images/icon/background_start_desktop.svg") center -213px/cover no-repeat;
+}
+
+.land-patner-pic {
+  background: url("../images/icon/logo_pigeons.svg") center center/contain no-repeat;
+}
+
+.board-right-hint {
+  background: url("../images/icon/hint.svg") center center/contain no-repeat;
+}
+
+.result-tru-question {
+  background: url("../images/icon/true_question.svg") center center/contain no-repeat;
+}
+
+.result-form-question2 {
+  background: url("../images/icon/form_thanks.svg") center center/contain no-repeat;
+}
+
+.result-form-question1 {
+  background: url("../images/icon/form_thanks1.svg") center center/contain no-repeat;
+}
+
+.result-form-question3 {
+  background: url("../images/icon/form_thanks3.svg") center center/contain no-repeat;
+}
+
+.result-false-question {
+  background: url("../images/icon/false_question.svg") center center/contain no-repeat;
+}
+
+.result-loss-level {
+  background: url("../images/icon/loss_level.svg") center center/contain no-repeat;
+}
+
+.result-pass-level1 {
+  background: url("../images/icon/pass_level_1.svg") center center/contain no-repeat;
+}
+
+.result-pass-level2 {
+  background: url("../images/icon/pass_level_2.svg") center center/contain no-repeat;
+}
+
+.result-pass-level3 {
+  background: url("../images/icon/pass_level_3.svg") center center/contain no-repeat;
+}
+
+.result-victory {
+  background: url("../images/icon/victory.svg") center center/contain no-repeat;
+}
+
+.present {
+  background: url("../images/icon/present.svg") center center/contain no-repeat;
+}
+
+.present:hover {
+  background: url("../images/icon/present_red.svg") center center/contain no-repeat;
+}
+
+.gift-block-present {
+  background-color: blue;
+  background: url("../images/icon/present.svg") center center/contain no-repeat;
+  width: 70px;
+  height: 70px;
+}
+
+.gift-block-present:hover {
+  background-color: blue;
+  background: url("../images/icon/present_red.svg") center center/contain no-repeat;
+}
+
+.column2-image1 {
+  background: url("../images/icon/keyhole.svg") center center/cover no-repeat;
+}
+
+@-webkit-keyframes aim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.column2-image1-aim {
+  background: url("../images/icon/aim.svg") center center/cover no-repeat;
+  -webkit-animation: aim 5s 1;
+          animation: aim 5s 1;
+}
+
+.thanks-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  margin: 10px;
+  height: 200px;
+  background: url("../images/icon/thanks.svg") center center/contain no-repeat;
+}
+
+.thanks-image-problem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  margin: 10px;
+  height: 200px;
+  background: url("../images/icon/elephant.png") center center/contain no-repeat;
+}
+
+@media (max-width: 570px) {
+  .land {
+    background: url("../images/icon/background_start_mob.svg") center center/cover no-repeat;
+  }
+}
+/*# sourceMappingURL=image.css.map */

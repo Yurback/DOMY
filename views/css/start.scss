@@ -1,0 +1,470 @@
+.start-h1 {
+
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center
+}
+
+.start-h2-conteiner {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+.start-h2 {
+    display: block;
+    margin-right: 0;
+    min-width: 400px;
+    width: 400px;
+    position: relative;
+    cursor: pointer;
+}
+
+.start-h2-menu {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+}
+
+.start-h2-upor-l {
+    min-width: 320px;
+}
+
+.start-h2-upor-r {
+    width: 320px;
+}
+
+.start-planeta-img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -23%;
+    right: -80px;
+    z-index: -1;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    border: 15px solid red;
+}
+
+.start-linia {
+    position: fixed;
+    display: flex;
+    left: 5%;
+    right: 5%; 
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 400px;
+    opacity: 0.5;
+    z-index: -2;
+    transition: 5s all;
+}
+
+.start-block {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.start-linia-wite {
+    position: fixed;
+    background-color: white;
+    top: 800px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 500px;
+    z-index: -1;
+}
+
+
+.house {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -20%;
+    left: -180px;
+    z-index: -1;
+    border-radius: 50%;
+    border: 15px solid yellow;
+            
+}
+
+.house:hover {
+    border: 15px solid red;
+}
+
+.start-svg {
+    width: 100%;
+    height: 400px;
+    z-index: -2;
+}
+
+.start-path {
+    height: 1600px;
+    width: 1600px;
+    position: fixed;
+    left: -180px;
+    top: -380px;
+    transform: rotate(30deg);
+    z-index: -2;
+}
+
+.start-qustions-flex {
+    position: absolute;
+    max-width: 1200px;
+    top: 80%;
+    right: 15%;
+    left: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.start-qustions-flex>div {
+    width: 150px;
+    height: 90px;
+    margin-right: 10px; 
+    font-size: 14px;
+    position: relative;
+}
+
+.start-smallcoteiner {
+    display: block;
+    width: 350px;
+    font-size: 16px;
+    margin-left: 150px;
+    margin-top: 200px;
+    margin-bottom: 150px; 
+    position: relative;
+}
+
+
+.start-qustions-flex-appendix-1 {
+    display: block;
+    position: absolute;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url("../images/icon/qustion1.svg") left top / contain no-repeat;
+}
+
+.start-o-proecte:hover {
+    .start-qustions-flex-appendix-1 {
+        transform: scale(1.3,1.3);;
+    }
+}
+
+.start-o-proecte {
+    cursor: pointer;
+}
+
+.start-qustions-2 {
+    cursor: pointer;
+}
+
+
+.start-qustions-flex-appendix-2 {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    background: url("../images/icon/qustion2.svg") left top / contain no-repeat;
+    // transition: 1s, all;
+}
+
+.start-h2:hover {
+    .start-qustions-flex-appendix-2 {
+        transform: scale(1.3,1.3);
+    }
+}
+
+@keyframes puls_qv {
+    0% {transform: scale(0, 0);}
+
+    50% {transform: scale(1.4,1.4);}
+    
+    100% {transform: scale(0, 0);}
+}
+
+
+
+@media (max-width: 800px) {
+       
+        .start-h1 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .house {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: -10%;
+            left: -120px;
+            z-index: -1;            
+        }
+
+        .start-planeta-img {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: -12%;
+            right: -60px;
+            z-index: -1;
+        }
+        .start-h2 {
+            min-width: 180px;
+            width: 200px;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .start-h2-menu {
+            font-size: 19px;
+            text-align: left;
+        }
+        
+        .start-h2-upor-l {
+            min-width: 130px;
+        }
+        
+        .start-h2-upor-r {
+            width: 100px;
+        }
+
+        .start-qustions-flex-appendix-2 {
+            top: 5px;
+            right: -37px;
+            width: 35px;
+            height: 35px;
+            animation: puls_qv 3s infinite;
+        }
+
+        .start-smallcoteiner {
+            margin-left: 50px;
+            width: 200px;
+            margin-bottom: 80px;
+        }
+               
+}
+
+@media (max-width: 350px) {
+    .start-h2-menu {
+        font-size: 16px;
+    }
+
+    .start-h2-conteiner {
+        margin-top: 160px;
+    }
+
+    .start-h2-upor-l {
+        min-width: 100px;
+    }
+
+    .start-qustions-flex-appendix-2 {
+        top: 5px;
+        right: -27px;
+    }
+
+    .start-smallcoteiner {
+    margin-top: 200px;
+    }
+
+    .start-qustions-2 {
+        font-size: 14px;
+    }
+}
+
+@media (min-height: 730px) {
+    .start-h2-conteiner {
+        margin-top: 260px;
+    }
+    .start-smallcoteiner {
+        margin-top: 250px;
+        margin-bottom: 150px;
+        }
+}
+
+@media (min-height: 950px) {
+    .start-h2-conteiner {
+        margin-top: 360px;
+    }
+    .start-smallcoteiner {
+        margin-top: 400px;
+        margin-bottom: 150px;
+        }
+}
+
+// ___________________ Блок карусели ________________________
+
+.wrapper-carousel {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    // border: 1px solid black;
+    margin: 50px auto;
+}
+
+#carousel {
+    width: 100%;
+    height: 100%;
+// transform: skew(-20deg);
+// border: 1px solid black;
+}
+
+#carousel .item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(0,0,0,0.3) url('../images/survey/Dolphin.png') center center / contain no-repeat;
+    border: 1px solid #000000;
+    border-radius: 100%;
+    //  transform: skew(20deg);
+    // transform: skew(-35deg, 35deg);
+}
+
+.wrapper-carousel .btn{
+    position: absolute;
+    // background:  blue;
+    // width: 50px;
+    z-index: 400;
+    // font-size: 16px;
+    // color: aliceblue;
+    // border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    // padding: 5px;
+    
+}
+
+.wrapper-carousel .btn-prev:hover{
+    border-top:4px solid blue;
+    border-left:4px solid blue;
+}
+
+.wrapper-carousel .btn-next:hover{
+    border-top:4px solid blue;
+    border-right:4px solid blue;
+}
+
+.wrapper-carousel .btn-prev{
+   
+    border-top:2px solid blue;
+    border-left:2px solid blue;
+    transform: rotate(-45deg);
+    width: 50px;
+    height: 50px;
+    left: -10%;
+    bottom: -10%;
+}
+
+.wrapper-carousel .btn-next{
+    border-top:2px solid blue;
+    border-right:2px solid blue;
+    transform: rotate(45deg);
+    width: 50px;
+    height: 50px;
+    right: -20%;
+    bottom: -10%;
+}
+
+#opasity {
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    margin-left: 200px;
+    margin-bottom: 10px
+}
+
+#scale {
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    margin-left: 200px;
+    margin-bottom: 10px
+}
+
+#scale2 {
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    margin-left: 200px;
+    margin-bottom: 10px
+}
+
+#scale-wrapper {
+    display: flex;
+}
+
+#width {
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    margin-left: 200px;
+    margin-bottom: 10px
+}
+
+#height {
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    margin-left: 200px
+}
+
+#rotate {
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    margin-left: 200px;
+    margin-bottom: 10px
+}
+
+#skew {
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    margin-left: 200px;
+    margin-bottom: 10px
+}
+
+.name-bord {
+    width: 100%;
+    text-align: center;
+    font-size: 50%;
+    margin-bottom: 0px
+}
+
+.btn-carusel {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background: blue;
+    border: 1px solid black;
+    color: white;
+    font-size: 100%
+}
+
+.plus {
+    top: 0px;
+    left: 70px;
+}
+
+.minus {
+    top: 0px;
+    left: -70px;
+}
+
+#scale, #scale2, #width, #opasity, #height, #rotate, #skew {
+    position: relative;
+    text-align: center;
+}
+
+.bord-value {
+   background: grey;
+}
